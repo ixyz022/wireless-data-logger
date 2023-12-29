@@ -3,15 +3,16 @@ import "react-native-gesture-handler";
 import { SafeAreaView, StyleSheet, Platform } from "react-native";
 
 import { NavigationContainer } from "@react-navigation/native";
-import MainNavigator from "@/navigation/MainNavigator";
+
+import MainBottomTabNavigator from "@/navigation/bottomTabs/MainBottomTabNavigator";
 
 const App = () => {
   return (
-    <SafeAreaView style={styles.safeArea}>
-      <NavigationContainer>
-        <MainNavigator />
-      </NavigationContainer>
-    </SafeAreaView>
+    <NavigationContainer>
+      <SafeAreaView style={styles.safeArea}>
+        <MainBottomTabNavigator />
+      </SafeAreaView>
+    </NavigationContainer>
   );
 };
 
